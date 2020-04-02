@@ -10,16 +10,16 @@
     <StackLayout>
         <views:Header/>
 
-        <StackLayout x:Name="formulaire" Orientation="Vertical">
-            <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand"></Label>
+        <StackLayout x:Name="formulaire" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="25" TextColor="Black" Margin="0,30" ></Label>
             <Label x:Name="error" IsVisible="False" TextColor="DarkRed"></Label>
-            <Entry Placeholder="Identifiant Twitter" x:Name="identifiant" Keyboard="Email" ReturnType="Next"></Entry>
-            <Entry Placeholder="Mot de passe" IsPassword="True" x:Name="password" ReturnType="Next"></Entry>
+            <Entry Placeholder="Identifiant Twitter" VerticalOptions="EndAndExpand" x:Name="identifiant" Keyboard="Email" ReturnType="Next" ></Entry>
+            <Entry Placeholder="Mot de passe" IsPassword="True" x:Name="password"  ReturnType="Next" ></Entry>
             <StackLayout Orientation="Horizontal">
                 <Switch x:Name="souvenir"></Switch>
                 <Label Text="Memoriser mes informations"></Label>
             </StackLayout>
-            <Button Text="Se connecter" Clicked="Connection_Clicked"></Button>
+            <Button Text="Se connecter" Clicked="Connection_Clicked" VerticalOptions="EndAndExpand" HorizontalOptions="Center" FontSize="25" Margin="0,30" TextColor="White" BackgroundColor="#58B0F0" ></Button>
         </StackLayout>
        
         

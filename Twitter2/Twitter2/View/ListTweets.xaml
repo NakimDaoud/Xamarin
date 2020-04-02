@@ -11,12 +11,12 @@
 
             <ScrollView x:Name="tweet" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-               <ListView x:Name="listetweets">
+               <ListView x:Name="listetweets" RowHeight="150">
                 <ListView.ItemTemplate>                    
                     <DataTemplate>
                         <ViewCell>
 
-                            <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Vertical"  Padding="0, 10">
 
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                                     <Image WidthRequest="75" HeightRequest="75"  Aspect="AspectFit"  Source="https://picsum.photos/50/50/?random"></Image>

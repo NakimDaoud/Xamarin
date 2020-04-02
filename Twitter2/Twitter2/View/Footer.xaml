@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Twitter2.View.Footer">
+             x:Class="Twitter2.View.Footer"
+             BackgroundColor="#58B0F0">
   <ContentView.Content>
         <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="75" Margin="10" >
             <Label Text="Fil" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontAttributes="Bold"></Label>

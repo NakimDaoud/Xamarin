@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:views="clr-namespace:Twitter2.View"
+             mc:Ignorable="d"
+             x:Class="Twitter2.View.ListTweets">
+ 
+        <StackLayout>
+            <views:Header/>
+
+            <ScrollView x:Name="tweet" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+               <ListView x:Name="listetweets">
+                <ListView.ItemTemplate>                    
+                    <DataTemplate>
+                        <ViewCell>
+
+                            <StackLayout Orientation="Vertical">
+
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                    <Image WidthRequest="75" HeightRequest="75"  Aspect="AspectFit"  Source="https://picsum.photos/50/50/?random"></Image>
+
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+                                            <Label Text="{Binding User.Login}" FontAttributes="Bold" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"></Label>
+                                            <Label Text="{Binding DateCreation}" FontAttributes="Bold" HorizontalTextAlignment="End"></Label>
+                                        </StackLayout>
+                                        <Label Text="{Binding Texte}" TextColor="Black"></Label>
+                                    </StackLayout>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <ImageButton Source="reply.png" BackgroundColor="Transparent" WidthRequest="25"  HorizontalOptions="CenterAndExpand"></ImageButton>
+                                    <ImageButton Source="retweet.png" BackgroundColor="Transparent" WidthRequest="25"  HorizontalOptions="CenterAndExpand"></ImageButton>
+                                    <ImageButton Source="favorite.png" BackgroundColor="Transparent" WidthRequest="25"  HorizontalOptions="CenterAndExpand"></ImageButton>
+                                </StackLayout>
+                            </StackLayout>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+
+               
+
+
+
+            </ScrollView>
+
+
+            <views:Footer/>
+
+        </StackLayout>
+</ContentPage>

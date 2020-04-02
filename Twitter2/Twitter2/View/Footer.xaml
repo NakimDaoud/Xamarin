@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Twitter2.View.Footer">
+  <ContentView.Content>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" HeightRequest="75" Margin="10" >
+            <Label Text="Fil" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontAttributes="Bold"></Label>
+            <Label Text="Notifications" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+            <Label Text="Messages" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+            <Label Text="Moi" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
